@@ -2,10 +2,11 @@
 
 namespace LucasDotVin\Soulbscription\Models;
 
-use Illuminate\Database\Eloquent\Builder;
+#use Illuminate\Database\Eloquent\Builder;
+use MongoDB\Laravel\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use MongoDB\Laravel\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 use LucasDotVin\Soulbscription\Events\SubscriptionCanceled;
 use LucasDotVin\Soulbscription\Events\SubscriptionRenewed;
@@ -26,6 +27,8 @@ class Subscription extends Model
     use SoftDeletes;
     use Starts;
     use Suppresses;
+    protected $connection = 'mongodb';
+
 
     protected $dates = [
         'canceled_at',

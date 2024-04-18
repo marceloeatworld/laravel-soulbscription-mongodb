@@ -1,4 +1,4 @@
-<h1 align="center">Laravel Soulbscription</h1>
+<h1 align="center">Laravel Soulbscription for Mongodb</h1>
 
 <p align="center"><a href="https://packagist.org/packages/lucasdotvin/laravel-soulbscription"><img alt="Latest Version on Packagist" src="https://img.shields.io/packagist/v/lucasdotvin/laravel-soulbscription.svg?style=flat-square"></a>
 <a href="https://github.com/lucasdotvin/laravel-soulbscription/actions/workflows/run-tests.yml"><img src="https://github.com/lucasdotvin/laravel-soulbscription/actions/workflows/run-tests.yml/badge.svg?branch=main" alt="run-tests"></a>
@@ -8,14 +8,14 @@
 
 ## About
 
-A straightforward interface to handle subscriptions and features consumption.
+A straightforward interface to handle subscriptions and features consumption. FORK FROM lucasdotvin
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require lucasdotvin/laravel-soulbscription
+composer require marceloeatworld/laravel-soulbscription-mongodb
 ```
 
 The package migrations are loaded automatically, but you can still publish them with this command:

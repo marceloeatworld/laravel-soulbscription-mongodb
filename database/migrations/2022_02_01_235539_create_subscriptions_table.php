@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+use MongoDB\Laravel\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class() extends Migration {
+    protected $connection = 'mongodb';
     /**
      * Run the migrations.
      *
@@ -13,7 +14,7 @@ return new class() extends Migration {
      */
     public function up()
     {
-        Schema::create('subscriptions', function (Blueprint $table) {
+        Schema::create('sb_subscriptions', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(\LucasDotVin\Soulbscription\Models\Plan::class);
             $table->timestamp('canceled_at')->nullable();
@@ -40,6 +41,6 @@ return new class() extends Migration {
      */
     public function down()
     {
-        Schema::dropIfExists('subscriptions');
+        Schema::dropIfExists('sb_subscriptions');
     }
 };

@@ -2,12 +2,16 @@
 
 namespace LucasDotVin\Soulbscription\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\Model;
+
 use LucasDotVin\Soulbscription\Models\Concerns\Expires;
 
 class FeatureTicket extends Model
 {
     use Expires;
+    protected $connection = 'mongodb';
+   
+    
 
     protected $fillable = [
         'charges',

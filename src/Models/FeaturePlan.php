@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 
 class FeaturePlan extends Pivot
 {
+    protected $connection = 'mongodb';
+
     protected $fillable = [
         'charges',
     ];

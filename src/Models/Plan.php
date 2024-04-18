@@ -3,8 +3,8 @@
 namespace LucasDotVin\Soulbscription\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use MongoDB\Laravel\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 use LucasDotVin\Soulbscription\Models\Concerns\HandlesRecurrence;
 
@@ -13,6 +13,8 @@ class Plan extends Model
     use HandlesRecurrence;
     use HasFactory;
     use SoftDeletes;
+    protected $connection = 'mongodb';
+
 
     protected $fillable = [
         'grace_days',

@@ -3,8 +3,8 @@
 namespace LucasDotVin\Soulbscription\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use MongoDB\Laravel\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\SoftDeletes;
 use LucasDotVin\Soulbscription\Models\Concerns\HandlesRecurrence;
 
 class Feature extends Model
@@ -12,6 +12,8 @@ class Feature extends Model
     use HandlesRecurrence;
     use HasFactory;
     use SoftDeletes;
+    protected $connection = 'mongodb';
+
 
     protected $fillable = [
         'consumable',
