@@ -23,23 +23,8 @@ class SoulbscriptionServiceProvider extends ServiceProvider
         ], 'soulbscription-migrations');
 
         $this->publishes([
-            __DIR__ . '/../database/migrations/upgrades/1.x-2.x' => database_path('migrations'),
-        ], 'soulbscription-migrations-upgrades-1.x-2.x');
+            __DIR__ . '/../database/seeder' => database_path('seeder'),
+        ], 'soulbscription-migrations');
 
-        $this->publishes([
-            __DIR__ . '/../database/migrations/upgrades/2.1-2.2' => database_path('migrations'),
-        ], 'soulbscription-migrations-upgrades-2.1-2.2');
-
-        $this->publishes([
-            __DIR__ . '/../database/migrations/upgrades/2.4-2.5' => database_path('migrations'),
-        ], 'soulbscription-migrations-upgrades-2.4-2.5');
-
-        $this->publishes([
-            __DIR__ . '/../database/migrations/upgrades/2.5-2.6' => database_path('migrations'),
-        ], 'soulbscription-migrations-upgrades-2.5-2.6');
-
-        $this->publishes([
-            __DIR__ . '/../database/migrations/upgrades/4.0-4.1' => database_path('migrations'),
-        ], 'soulbscription-migrations-upgrades-4.0-4.1');
     }
 }

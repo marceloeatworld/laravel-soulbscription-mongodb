@@ -15,7 +15,6 @@ return [
 
         'feature_ticket' => \LucasDotVin\Soulbscription\Models\FeatureTicket::class,
 
-        'feature_plan' => \LucasDotVin\Soulbscription\Models\FeaturePlan::class,
 
         'plan' => \LucasDotVin\Soulbscription\Models\Plan::class,
 

@@ -2,16 +2,11 @@
 
 use Illuminate\Database\Migrations\Migration;
 use MongoDB\Laravel\Schema\Blueprint;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-return new class() extends Migration {
+return new class extends Migration {
     protected $connection = 'mongodb';
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
         Schema::create('sb_subscriptions', function (Blueprint $table) {
@@ -25,7 +20,6 @@ return new class() extends Migration {
             $table->boolean('was_switched')->default(false);
             $table->softDeletes();
             $table->timestamps();
-
             if (config('soulbscription.models.subscriber.uses_uuid')) {
                 $table->uuidMorphs('subscriber');
             } else {
@@ -34,11 +28,6 @@ return new class() extends Migration {
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('sb_subscriptions');
