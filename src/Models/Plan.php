@@ -30,9 +30,7 @@ class Plan extends Model
 
     public function features()
     {
-        return $this->belongsToMany(config('soulbscription.models.feature'))
-            ->using(config('soulbscription.models.feature_plan'))
-            ->withPivot(['charges']);
+        return $this->hasMany(config('soulbscription.models.feature'), 'plan_ids.'.$this->id);
     }
 
     public function subscriptions()
