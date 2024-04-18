@@ -1,10 +1,10 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Database\Factories;
+namespace MarceloEatWorld\Soulbscription\Database\Factories;
 
-use LucasDotVin\Soulbscription\Enums\PeriodicityType;
+use MarceloEatWorld\Soulbscription\Enums\PeriodicityType;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LucasDotVin\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Models\Plan;
 
 class PlanFactory extends Factory
 {

@@ -3,7 +3,7 @@
 namespace Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LucasDotVin\Soulbscription\SoulbscriptionServiceProvider;
+use MarceloEatWorld\Soulbscription\SoulbscriptionServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -16,7 +16,7 @@ class TestCase extends Orchestra
 
         Factory::guessFactoryNamesUsing(
             fn (string $modelName) =>
-                'LucasDotVin\\Soulbscription\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+                'MarceloEatWorld\\Soulbscription\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Models\Scopes;
+namespace MarceloEatWorld\Soulbscription\Models\Scopes;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

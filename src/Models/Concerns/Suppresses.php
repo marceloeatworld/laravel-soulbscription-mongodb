@@ -1,8 +1,8 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Models\Concerns;
+namespace MarceloEatWorld\Soulbscription\Models\Concerns;
 
-use LucasDotVin\Soulbscription\Models\Scopes\SuppressingScope;
+use MarceloEatWorld\Soulbscription\Models\Scopes\SuppressingScope;
 
 trait Suppresses
 {

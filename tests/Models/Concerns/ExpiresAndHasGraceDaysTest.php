@@ -4,9 +4,9 @@ namespace Tests\Feature\Models\Concerns;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use LucasDotVin\Soulbscription\Models\Concerns\ExpiresAndHasGraceDays;
-use LucasDotVin\Soulbscription\Models\Scopes\ExpiringWithGraceDaysScope;
-use LucasDotVin\Soulbscription\Models\Subscription;
+use MarceloEatWorld\Soulbscription\Models\Concerns\ExpiresAndHasGraceDays;
+use MarceloEatWorld\Soulbscription\Models\Scopes\ExpiringWithGraceDaysScope;
+use MarceloEatWorld\Soulbscription\Models\Subscription;
 use Tests\TestCase;
 
 class ExpiresAndHasGraceDaysTest extends TestCase

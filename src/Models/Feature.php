@@ -1,11 +1,11 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Models;
+namespace MarceloEatWorld\Soulbscription\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use MongoDB\Laravel\Eloquent\Model;
 use MongoDB\Laravel\Eloquent\SoftDeletes;
-use LucasDotVin\Soulbscription\Models\Concerns\HandlesRecurrence;
+use MarceloEatWorld\Soulbscription\Models\Concerns\HandlesRecurrence;
 
 class Feature extends Model
 {

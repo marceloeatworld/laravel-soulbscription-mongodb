@@ -4,7 +4,7 @@ namespace Tests\Feature\Models\Concerns;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use LucasDotVin\Soulbscription\Models\Subscription;
+use MarceloEatWorld\Soulbscription\Models\Subscription;
 use Tests\TestCase;
 
 class StartsTest extends TestCase

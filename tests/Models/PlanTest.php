@@ -5,9 +5,9 @@ namespace Tests\Feature\Models;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Carbon;
-use LucasDotVin\Soulbscription\Enums\PeriodicityType;
-use LucasDotVin\Soulbscription\Models\Plan;
-use LucasDotVin\Soulbscription\Models\Subscription;
+use MarceloEatWorld\Soulbscription\Enums\PeriodicityType;
+use MarceloEatWorld\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Models\Subscription;
 use Tests\TestCase;
 
 class PlanTest extends TestCase

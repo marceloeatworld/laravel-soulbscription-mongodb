@@ -5,8 +5,8 @@ namespace Tests\Feature\Models;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Carbon;
-use LucasDotVin\Soulbscription\Enums\PeriodicityType;
-use LucasDotVin\Soulbscription\Models\Feature;
+use MarceloEatWorld\Soulbscription\Enums\PeriodicityType;
+use MarceloEatWorld\Soulbscription\Models\Feature;
 use Tests\TestCase;
 
 class FeatureTest extends TestCase

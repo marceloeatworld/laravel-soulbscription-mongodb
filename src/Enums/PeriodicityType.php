@@ -1,6 +1,6 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Enums;
+namespace MarceloEatWorld\Soulbscription\Enums;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;

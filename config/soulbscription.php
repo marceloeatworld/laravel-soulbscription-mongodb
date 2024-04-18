@@ -9,21 +9,20 @@ return [
 
     'models' => [
 
-        'feature' => \LucasDotVin\Soulbscription\Models\Feature::class,
+        'feature' => \MarceloEatWorld\Soulbscription\Models\Feature::class,
 
-        'feature_consumption' => \LucasDotVin\Soulbscription\Models\FeatureConsumption::class,
+        'feature_consumption' => \MarceloEatWorld\Soulbscription\Models\FeatureConsumption::class,
 
-        'feature_ticket' => \LucasDotVin\Soulbscription\Models\FeatureTicket::class,
+        'feature_ticket' => \MarceloEatWorld\Soulbscription\Models\FeatureTicket::class,
 
-
-        'plan' => \LucasDotVin\Soulbscription\Models\Plan::class,
+        'plan' => \MarceloEatWorld\Soulbscription\Models\Plan::class,
 
         'subscriber' => [
             'uses_uuid' => env('SOULBSCRIPTION_SUBSCRIBER_USES_UUID', false),
         ],
 
-        'subscription' => \LucasDotVin\Soulbscription\Models\Subscription::class,
+        'subscription' => \MarceloEatWorld\Soulbscription\Models\Subscription::class,
 
-        'subscription_renewal' => \LucasDotVin\Soulbscription\Models\SubscriptionRenewal::class,
+        'subscription_renewal' => \MarceloEatWorld\Soulbscription\Models\SubscriptionRenewal::class,
     ],
 ];

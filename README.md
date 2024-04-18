@@ -45,7 +45,7 @@ To start using it, you just have to add the given trait to your `User` model (or
 
 namespace App\Models;
 
-use LucasDotVin\Soulbscription\Models\Concerns\HasSubscriptions;
+use MarceloEatWorld\Soulbscription\Models\Concerns\HasSubscriptions;
 
 class User
 {
@@ -65,8 +65,8 @@ First things first, you have to define the features you'll offer. In the example
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use LucasDotVin\Soulbscription\Enums\PeriodicityType;
-use LucasDotVin\Soulbscription\Models\Feature;
+use MarceloEatWorld\Soulbscription\Enums\PeriodicityType;
+use MarceloEatWorld\Soulbscription\Models\Feature;
 
 class FeatureSeeder extends Seeder
 {
@@ -157,8 +157,8 @@ Now you need to define the plans available to subscription in your app:
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use LucasDotVin\Soulbscription\Enums\PeriodicityType;
-use LucasDotVin\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Enums\PeriodicityType;
+use MarceloEatWorld\Soulbscription\Models\Plan;
 
 class PlanSeeder extends Seeder
 {
@@ -213,7 +213,7 @@ With the configuration above, the subscribers of the "gold" plan will have seven
 As each feature can belong to multiple plans (and they can have multiple features), you have to associate them:
 
 ```php
-use LucasDotVin\Soulbscription\Models\Feature;
+use MarceloEatWorld\Soulbscription\Models\Feature;
 
 // ...
 
@@ -275,7 +275,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StudentStoreFormRequest;
 use App\Models\Course;
 use App\Models\User;
-use LucasDotVin\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Models\Plan;
 
 class StudentController extends Controller
 {

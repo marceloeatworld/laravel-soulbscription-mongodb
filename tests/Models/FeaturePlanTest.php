@@ -4,9 +4,9 @@ namespace Tests\Feature\Models;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use LucasDotVin\Soulbscription\Models\Feature;
-use LucasDotVin\Soulbscription\Models\FeaturePlan;
-use LucasDotVin\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Models\Feature;
+use MarceloEatWorld\Soulbscription\Models\FeaturePlan;
+use MarceloEatWorld\Soulbscription\Models\Plan;
 use Tests\TestCase;
 
 class FeaturePlanTest extends TestCase

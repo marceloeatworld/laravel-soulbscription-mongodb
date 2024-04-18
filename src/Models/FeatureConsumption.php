@@ -1,10 +1,10 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Models;
+namespace MarceloEatWorld\Soulbscription\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use MongoDB\Laravel\Eloquent\Model;
-use LucasDotVin\Soulbscription\Models\Concerns\Expires;
+use MarceloEatWorld\Soulbscription\Models\Concerns\Expires;
 
 class FeatureConsumption extends Model
 {

@@ -1,23 +1,23 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Models;
+namespace MarceloEatWorld\Soulbscription\Models;
 
 use MongoDB\Laravel\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use MongoDB\Laravel\Eloquent\Model;
 use MongoDB\Laravel\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
-use LucasDotVin\Soulbscription\Events\SubscriptionCanceled;
-use LucasDotVin\Soulbscription\Events\SubscriptionRenewed;
-use LucasDotVin\Soulbscription\Events\SubscriptionScheduled;
-use LucasDotVin\Soulbscription\Events\SubscriptionStarted;
-use LucasDotVin\Soulbscription\Events\SubscriptionSuppressed;
-use LucasDotVin\Soulbscription\Models\Concerns\ExpiresAndHasGraceDays;
-use LucasDotVin\Soulbscription\Models\Concerns\Starts;
-use LucasDotVin\Soulbscription\Models\Concerns\Suppresses;
-use LucasDotVin\Soulbscription\Models\Scopes\ExpiringWithGraceDaysScope;
-use LucasDotVin\Soulbscription\Models\Scopes\StartingScope;
-use LucasDotVin\Soulbscription\Models\Scopes\SuppressingScope;
+use MarceloEatWorld\Soulbscription\Events\SubscriptionCanceled;
+use MarceloEatWorld\Soulbscription\Events\SubscriptionRenewed;
+use MarceloEatWorld\Soulbscription\Events\SubscriptionScheduled;
+use MarceloEatWorld\Soulbscription\Events\SubscriptionStarted;
+use MarceloEatWorld\Soulbscription\Events\SubscriptionSuppressed;
+use MarceloEatWorld\Soulbscription\Models\Concerns\ExpiresAndHasGraceDays;
+use MarceloEatWorld\Soulbscription\Models\Concerns\Starts;
+use MarceloEatWorld\Soulbscription\Models\Concerns\Suppresses;
+use MarceloEatWorld\Soulbscription\Models\Scopes\ExpiringWithGraceDaysScope;
+use MarceloEatWorld\Soulbscription\Models\Scopes\StartingScope;
+use MarceloEatWorld\Soulbscription\Models\Scopes\SuppressingScope;
 
 class Subscription extends Model
 {

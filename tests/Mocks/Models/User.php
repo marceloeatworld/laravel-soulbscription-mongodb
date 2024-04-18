@@ -5,7 +5,7 @@ namespace Tests\Mocks\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use LucasDotVin\Soulbscription\Models\Concerns\HasSubscriptions;
+use MarceloEatWorld\Soulbscription\Models\Concerns\HasSubscriptions;
 use Tests\Mocks\Database\Factories\UserFactory;
 
 class User extends Authenticatable

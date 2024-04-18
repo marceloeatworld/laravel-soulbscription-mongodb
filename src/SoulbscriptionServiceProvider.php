@@ -1,6 +1,6 @@
 <?php
 
-namespace LucasDotVin\Soulbscription;
+namespace MarceloEatWorld\Soulbscription;
 
 use Illuminate\Support\ServiceProvider;
 

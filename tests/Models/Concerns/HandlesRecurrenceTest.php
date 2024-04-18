@@ -5,8 +5,8 @@ namespace Tests\Feature\Models\Concerns;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Carbon;
-use LucasDotVin\Soulbscription\Enums\PeriodicityType;
-use LucasDotVin\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Enums\PeriodicityType;
+use MarceloEatWorld\Soulbscription\Models\Plan;
 use Tests\TestCase;
 
 class HandlesRecurrenceTest extends TestCase

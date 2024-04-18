@@ -1,10 +1,10 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Database\Factories;
+namespace MarceloEatWorld\Soulbscription\Database\Factories;
 
-use LucasDotVin\Soulbscription\Models\Feature;
+use MarceloEatWorld\Soulbscription\Models\Feature;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LucasDotVin\Soulbscription\Models\FeatureConsumption;
+use MarceloEatWorld\Soulbscription\Models\FeatureConsumption;
 
 class FeatureConsumptionFactory extends Factory
 {

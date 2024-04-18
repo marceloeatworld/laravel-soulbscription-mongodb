@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use LucasDotVin\Soulbscription\Models\Feature;
-use LucasDotVin\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Models\Feature;
+use MarceloEatWorld\Soulbscription\Models\Plan;
 
 class FeatureSeeder extends Seeder
 {

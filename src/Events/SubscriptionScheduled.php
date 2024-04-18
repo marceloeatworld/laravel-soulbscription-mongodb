@@ -1,11 +1,11 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Events;
+namespace MarceloEatWorld\Soulbscription\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use LucasDotVin\Soulbscription\Models\Subscription;
+use MarceloEatWorld\Soulbscription\Models\Subscription;
 
 class SubscriptionScheduled
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Events;
+namespace MarceloEatWorld\Soulbscription\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use LucasDotVin\Soulbscription\Models\Feature;
-use LucasDotVin\Soulbscription\Models\FeatureTicket;
+use MarceloEatWorld\Soulbscription\Models\Feature;
+use MarceloEatWorld\Soulbscription\Models\FeatureTicket;
 
 class FeatureTicketCreated
 {

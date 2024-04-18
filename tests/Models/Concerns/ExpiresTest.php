@@ -4,7 +4,7 @@ namespace Tests\Feature\Models\Concerns;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use LucasDotVin\Soulbscription\Models\FeatureConsumption;
+use MarceloEatWorld\Soulbscription\Models\FeatureConsumption;
 use Tests\TestCase;
 
 class ExpiresTest extends TestCase

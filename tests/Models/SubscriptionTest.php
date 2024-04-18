@@ -6,12 +6,12 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Event;
-use LucasDotVin\Soulbscription\Events\SubscriptionCanceled;
-use LucasDotVin\Soulbscription\Events\SubscriptionRenewed;
-use LucasDotVin\Soulbscription\Events\SubscriptionStarted;
-use LucasDotVin\Soulbscription\Events\SubscriptionSuppressed;
-use LucasDotVin\Soulbscription\Models\Plan;
-use LucasDotVin\Soulbscription\Models\Subscription;
+use MarceloEatWorld\Soulbscription\Events\SubscriptionCanceled;
+use MarceloEatWorld\Soulbscription\Events\SubscriptionRenewed;
+use MarceloEatWorld\Soulbscription\Events\SubscriptionStarted;
+use MarceloEatWorld\Soulbscription\Events\SubscriptionSuppressed;
+use MarceloEatWorld\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Models\Subscription;
 use Tests\Mocks\Models\User;
 use Tests\TestCase;
 

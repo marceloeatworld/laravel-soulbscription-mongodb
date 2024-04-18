@@ -28,8 +28,8 @@
     },
     "autoload": {
         "psr-4": {
-            "LucasDotVin\\Soulbscription\\": "src",
-            "LucasDotVin\\Soulbscription\\Database\\Factories\\": "database/factories"
+            "MarceloEatWorld\\Soulbscription\\": "src",
+            "MarceloEatWorld\\Soulbscription\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
@@ -51,7 +51,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LucasDotVin\\Soulbscription\\SoulbscriptionServiceProvider"
+                "MarceloEatWorld\\Soulbscription\\SoulbscriptionServiceProvider"
             ],
             "aliases": []
         }

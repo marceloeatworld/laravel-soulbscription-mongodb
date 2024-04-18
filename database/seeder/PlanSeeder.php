@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use LucasDotVin\Soulbscription\Enums\PeriodicityType;
-use LucasDotVin\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Enums\PeriodicityType;
+use MarceloEatWorld\Soulbscription\Models\Plan;
 
 class PlanSeeder extends Seeder
 {

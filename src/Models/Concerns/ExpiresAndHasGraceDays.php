@@ -1,8 +1,8 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Models\Concerns;
+namespace MarceloEatWorld\Soulbscription\Models\Concerns;
 
-use LucasDotVin\Soulbscription\Models\Scopes\ExpiringWithGraceDaysScope;
+use MarceloEatWorld\Soulbscription\Models\Scopes\ExpiringWithGraceDaysScope;
 
 trait ExpiresAndHasGraceDays
 {

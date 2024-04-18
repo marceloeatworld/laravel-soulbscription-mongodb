@@ -1,9 +1,9 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Models;
+namespace MarceloEatWorld\Soulbscription\Models;
 
 use MongoDB\Laravel\Eloquent\Model;
-use LucasDotVin\Soulbscription\Models\Concerns\Expires;
+use MarceloEatWorld\Soulbscription\Models\Concerns\Expires;
 
 class FeatureTicket extends Model
 {

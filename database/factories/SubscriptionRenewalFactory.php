@@ -1,8 +1,8 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Database\Factories;
+namespace MarceloEatWorld\Soulbscription\Database\Factories;
 
-use LucasDotVin\Soulbscription\Models\{Subscription, SubscriptionRenewal};
+use MarceloEatWorld\Soulbscription\Models\{Subscription, SubscriptionRenewal};
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class SubscriptionRenewalFactory extends Factory

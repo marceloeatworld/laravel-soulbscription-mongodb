@@ -1,10 +1,10 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Database\Factories;
+namespace MarceloEatWorld\Soulbscription\Database\Factories;
 
-use LucasDotVin\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Models\Plan;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use LucasDotVin\Soulbscription\Models\Subscription;
+use MarceloEatWorld\Soulbscription\Models\Subscription;
 
 class SubscriptionFactory extends Factory
 {

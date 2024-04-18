@@ -1,6 +1,6 @@
 <?php
 
-namespace LucasDotVin\Soulbscription\Models\Concerns;
+namespace MarceloEatWorld\Soulbscription\Models\Concerns;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -9,12 +9,12 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use InvalidArgumentException;
 use LogicException;
-use LucasDotVin\Soulbscription\Events\FeatureConsumed;
-use LucasDotVin\Soulbscription\Events\FeatureTicketCreated;
-use LucasDotVin\Soulbscription\Models\Feature;
-use LucasDotVin\Soulbscription\Models\FeatureTicket;
-use LucasDotVin\Soulbscription\Models\Plan;
-use LucasDotVin\Soulbscription\Models\Subscription;
+use MarceloEatWorld\Soulbscription\Events\FeatureConsumed;
+use MarceloEatWorld\Soulbscription\Events\FeatureTicketCreated;
+use MarceloEatWorld\Soulbscription\Models\Feature;
+use MarceloEatWorld\Soulbscription\Models\FeatureTicket;
+use MarceloEatWorld\Soulbscription\Models\Plan;
+use MarceloEatWorld\Soulbscription\Models\Subscription;
 use OutOfBoundsException;
 use OverflowException;
 
