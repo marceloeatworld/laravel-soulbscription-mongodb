@@ -2,7 +2,6 @@
 
 namespace LucasDotVin\Soulbscription\Models;
 
-#use Illuminate\Database\Eloquent\Builder;
 use MongoDB\Laravel\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use MongoDB\Laravel\Eloquent\Model;
@@ -27,8 +26,8 @@ class Subscription extends Model
     use SoftDeletes;
     use Starts;
     use Suppresses;
-    protected $connection = 'mongodb';
 
+    protected $connection = 'mongodb';
 
     protected $dates = [
         'canceled_at',

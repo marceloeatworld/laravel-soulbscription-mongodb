@@ -12,8 +12,8 @@ class Feature extends Model
     use HandlesRecurrence;
     use HasFactory;
     use SoftDeletes;
-    protected $connection = 'mongodb';
 
+    protected $connection = 'mongodb';
 
     protected $fillable = [
         'consumable',
@@ -22,12 +22,16 @@ class Feature extends Model
         'periodicity',
         'quota',
         'postpaid',
+        'plan_ids',
+    ];
+
+    protected $casts = [
+        'plan_ids' => 'array',
     ];
 
     public function plans()
     {
-        return $this->belongsToMany(config('soulbscription.models.plan'))
-            ->using(config('soulbscription.models.feature_plan'));
+        return $this->belongsToMany(config('soulbscription.models.plan'));
     }
 
     public function tickets()

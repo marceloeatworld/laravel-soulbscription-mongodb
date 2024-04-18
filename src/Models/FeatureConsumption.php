@@ -4,15 +4,14 @@ namespace LucasDotVin\Soulbscription\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use MongoDB\Laravel\Eloquent\Model;
-
 use LucasDotVin\Soulbscription\Models\Concerns\Expires;
 
 class FeatureConsumption extends Model
 {
     use Expires;
     use HasFactory;
-    protected $connection = 'mongodb';
 
+    protected $connection = 'mongodb';
 
     protected $fillable = [
         'consumption',
