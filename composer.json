@@ -1,18 +1,19 @@
 {
-    "name": "lucasdotvin/laravel-soulbscription",
-    "description": "A straightforward interface to handle subscriptions and features consumption.",
+    "name": "marceloeatworld/laravel-soulbscription-mongodb",
+    "description": "Fork from lucasdotvin - A straightforward interface to handle subscriptions and features consumption for mongodb.",
     "keywords": [
         "lucasdotvin",
         "laravel",
         "laravel-soulbscription",
-        "subscriptions"
+        "subscriptions",
+        "mongodb"
     ],
-    "homepage": "https://github.com/lucasdotvin/laravel-soulbscription",
+    "homepage": "https://github.com/marceloeatworld/laravel-soulbscription-mongodb",
     "license": "MIT",
     "authors": [
         {
-            "name": "Lucas Vinicius",
-            "email": "lucasvinicius211@yahoo.com",
+            "name": "Marcelo Pereira",
+            "email": "diagngo@gmail.com",
             "role": "Developer"
         }
     ],
@@ -27,8 +28,8 @@
     },
     "autoload": {
         "psr-4": {
-            "LucasDotVin\\Soulbscription\\": "src",
-            "LucasDotVin\\Soulbscription\\Database\\Factories\\": "database/factories"
+            "MarceloEatWorld\\Soulbscription\\": "src",
+            "MarceloEatWorld\\Soulbscription\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
@@ -50,7 +51,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LucasDotVin\\Soulbscription\\SoulbscriptionServiceProvider"
+                "MarceloEatWorld\\Soulbscription\\SoulbscriptionServiceProvider"
             ],
             "aliases": []
         }
