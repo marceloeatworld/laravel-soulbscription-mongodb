@@ -21,18 +21,18 @@ class FeatureSeeder extends Seeder
         ]);
 
         $free = Plan::whereName('Curious')->first();
-        $free->features()->attach($photoboothCredits, ['charges' => 5.0]);
-
         $basic = Plan::whereName('Explorer')->first();
-        $basic->features()->attach($photoboothCredits, ['charges' => 1000.0]);
-        $basic->features()->attach($creationCredits, ['charges' => 500.0]);
-
         $pro = Plan::whereName('Genius')->first();
-        $pro->features()->attach($photoboothCredits, ['charges' => 10000.0]);
-        $pro->features()->attach($creationCredits, ['charges' => 1000.0]);
 
-        // Mise à jour des champs `plan_ids` dans les modèles Feature
-        $photoboothCredits->plan_ids = [$free->id, $basic->id, $pro->id];
-        $photoboothCredits->save();
+        $photoboothCredits->plans()->attach([
+            $free->id => ['charges' => 5.0],
+            $basic->id => ['charges' => 1000.0],
+            $pro->id => ['charges' => 10000.0],
+        ]);
 
-        $creationCredits->plan_ids = [$basic->id, $pro->id]
+        $creationCredits->plans()->attach([
+            $basic->id => ['charges' => 500.0],
+            $pro->id => ['charges' => 1000.0],
+        ]);
+    }
+}
